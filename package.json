@@ -1,0 +1,57 @@
+{
+  "name": "@hospitalrun-org/cli",
+  "version": "1.0.0",
+  "description": "Command line interface for +HospitalRun applications",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "bin": {
+    "hospitalrun": "./dist/hospitalrun.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prepare": "tsc"
+  },
+  "homepage": "https://github.com/HospitalRun/hospitalrun-cli#readme",
+  "bugs": {
+    "url": "https://github.com/HospitalRun/hospitalrun-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HospitalRun/hospitalrun-cli.git"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm test"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/core": "^8.1.0",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/release-notes-generator": "^7.3.0",
+    "@types/fs-extra": "^8.0.0",
+    "@types/node": "^12.7.4",
+    "commitlint-config-gitmoji": "^1.0.1",
+    "cross-env": "^5.2.1",
+    "cz-emoji": "^1.1.2",
+    "dateformat": "^3.0.3",
+    "husky": "^3.0.5",
+    "semantic-release-gitmoji": "^1.3.2",
+    "tsdx": "^0.9.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "commander": "^3.0.1",
+    "cross-spawn": "^7.0.0"
+  }
+}
