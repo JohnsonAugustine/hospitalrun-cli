@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "prepare": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "homepage": "https://github.com/HospitalRun/hospitalrun-cli#readme",
   "bugs": {

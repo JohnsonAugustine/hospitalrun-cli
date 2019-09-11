@@ -41,18 +41,26 @@ const pkgTest = {
 // Lazy Load any commands that are available
 // NOTE: We can hardcode the commands to make the cli faster or present a spinner while it fetches dependencies
 Object.keys(pkgList)
-    .filter((pkg: any) => pkg.match('@hospitalrun') && !pkg.match('@hospitalrun-org/cli'))
+    .filter((pkg: any) => {
+    return pkg.match('@hospitalrun') && !pkg.match('@hospitalrun-org/cli')
+    })
     .forEach((pkg: string) => {
-        let mod = require(pkg)
-        if (typeof mod.commands !== 'undefined') {
-            Object.keys(mod.commands).forEach((cmd: any) => {
-                program.command(
-                    cmd,
-                    mod.commands[cmd].description,
-                    {executableFile: mod.commands[cmd].name}
-                )
-            })
+        try{
+            let mod = require(pkg)
+
+            if (typeof mod.commands !== 'undefined') {
+                Object.keys(mod.commands).forEach((cmd: any) => {
+                    program.command(
+                        cmd,
+                        mod.commands[cmd].description,
+                        {executableFile: mod.commands[cmd].name}
+                    )
+                })
+            }
+        } catch(err){
+            console.log(`${err} loading ${pkg}`)
         }
+
     });
 
 // Run the Program
