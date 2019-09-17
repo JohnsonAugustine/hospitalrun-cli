@@ -1,5 +1,5 @@
 {
-  "name": "@hospitalrun-org/cli",
+  "name": "@hospitalrun/cli",
   "version": "1.0.0",
   "description": "Command line interface for +HospitalRun applications",
   "files": [
