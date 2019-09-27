@@ -1,6 +1,6 @@
 {
-  "name": "@hospitalrun-org/cli",
-  "version": "0.1.0",
+  "name": "@hospitalrun/cli",
+  "version": "1.0.0",
   "description": "Command line interface for +HospitalRun applications",
   "files": [
     "dist"
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "prepare": "tsc"
+    "prepare": "npm run build"
   },
   "homepage": "https://github.com/HospitalRun/hospitalrun-cli#readme",
   "bugs": {
