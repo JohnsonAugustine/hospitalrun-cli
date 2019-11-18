@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "colors": "~1.4.0",
-    "commander": "~3.0.2",
+    "commander": "~4.0.1",
     "cross-spawn": "~7.0.0",
     "inquirer": "~7.0.0"
   }
