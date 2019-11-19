@@ -37,7 +37,7 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
+    "@commitlint/cli": "~8.2.0",
     "@commitlint/config-conventional": "~8.2.0",
     "@commitlint/core": "~8.1.0",
     "@commitlint/prompt": "^8.2.0",
@@ -57,7 +57,7 @@
     "semantic-release": "^15.13.24",
     "tsdx": "~0.11.0",
     "tslib": "~1.10.0",
-    "typescript": "~3.6.2"
+    "typescript": "~3.7.2"
   },
   "dependencies": {
     "colors": "~1.4.0",
