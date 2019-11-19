@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/config-conventional": "~8.2.0",
     "@commitlint/core": "~8.1.0",
     "@commitlint/prompt": "^8.2.0",
     "@semantic-release/changelog": "^3.0.4",
@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "colors": "~1.4.0",
-    "commander": "~3.0.2",
+    "commander": "~4.0.1",
     "cross-spawn": "~7.0.0",
     "inquirer": "~7.0.0"
   }
